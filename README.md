@@ -1,38 +1,45 @@
-# Khatabook
-📒 Khata Book
+# CrediTrack
 
-A simple Khata Book (Ledger Management) web application built with Node.js, Express.js, EJS, and JavaScript. The application allows users to manage customers, record transactions, and track money given and taken through a clean and intuitive interface.
+A simple ledger-management web application built with Node.js, Express.js, EJS, MongoDB, and Mongoose. CrediTrack helps manage customers, record transactions, and track money given and taken through a clean interface.
 
-✨ Features
+## ✨ Features
 
-* ➕ Add new customers
-* 👥 View all customers
-* 📄 Individual customer profile page
-* 💰 Record Given and Taken transactions
-* 📊 Automatic calculation of:
-    * Total Customers
-    * Total Given
-    * Total Taken
-    * Net Balance
-    * Total Transactions
-* 🗑 Delete customers
-* 🗑 Delete individual transactions
-* 📂 JSON-based data storage
-* 🎨 Dynamic UI using EJS templates
+- ➕ Add new customers
+- 👥 View all customers
+- 📄 Individual customer profile page
+- 💰 Record **Given** and **Taken** transactions
+- 📊 Automatic calculation of:
+  - Total customers
+  - Total given
+  - Total taken
+  - Net balance
+  - Total transactions
+- 🗑 Delete customers
+- 🗑 Delete individual transactions
+- 🗄 Persistent data storage with MongoDB
+- 🎨 Dynamic UI using EJS templates
 
-🛠 Tech Stack
+## 🛠 Tech Stack
 
-* Node.js
-* Express.js
-* EJS
-* HTML5
-* CSS3
-* JavaScript
-* File System (fs) Module
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- EJS
+- HTML5
+- CSS3
+- JavaScript
 
-📁 Project Structure
+## 📁 Project Structure
 
-KhataBook/
+```text
+CrediTrack/
+│── configs/
+│   └── mongoose.js
+│
+│── models/
+│   └── user.js
+│
 │── public/
 │   ├── css/
 │   └── images/
@@ -43,69 +50,70 @@ KhataBook/
 │   ├── list.ejs
 │   └── add.ejs
 │
-│── data.json
 │── server.js
 │── package.json
 │── README.md
+```
 
-🚀 Getting Started
+## 🚀 Getting Started
 
-Clone the repository
+Clone the repository:
 
-git clone https://github.com/<your-username>/KhataBook.git
+```bash
+git clone https://github.com/vineet-rathee/CrediTrack.git
+```
 
-Navigate to the project
+Navigate to the project:
 
-cd KhataBook
+```bash
+cd CrediTrack
+```
 
-Install dependencies
+Install dependencies:
 
+```bash
 npm install
+```
 
-Start the server
+Configure your MongoDB connection in `configs/mongoose.js`.
 
+Start the server:
+
+```bash
 node server.js
+```
 
-Open your browser and visit:
+Open your browser:
 
+```text
 http://localhost:3000
+```
 
-📸 Screens
-
-* Home Dashboard
-* Customer List
-* Customer Details
-* Add Customer
-* Transaction History
-
-(You can add screenshots here later.)
-
-🎯 Learning Objectives
+## 🎯 Learning Objectives
 
 This project was built to practice:
 
-* Express.js routing
-* Middleware
-* EJS templating
-* CRUD operations
-* Working with JSON data
-* Form handling
-* Dynamic routes
-* File handling using Node.js
+- Express.js routing and middleware
+- EJS templating
+- CRUD operations
+- MongoDB database operations
+- Mongoose schemas and models
+- Form handling
+- Dynamic routes
+- Nested transaction data
 
-🔮 Future Improvements
+## 🔮 Future Improvements
 
-* Edit customer details
-* Edit transactions
-* Search customers
-* Filter transactions
-* Authentication
-* MongoDB + Mongoose integration
-* Responsive mobile design
-* Dashboard analytics
+- Edit customer details
+- Edit transactions
+- Search customers
+- Filter transactions
+- Authentication
+- Responsive mobile design
+- Dashboard analytics
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Vineet Rathi
 
-If you found this project useful, feel free to ⭐ the repository.# CrediTrack
+If you found this project useful, feel free to ⭐ the repository.
