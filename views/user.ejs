@@ -64,7 +64,7 @@
             <form action="/add" method="POST">
                 <input type="text" name="desc" placeholder="Description" required>
                 <input type="number" name="amount" placeholder="Amount" required>
-                <select name="option" required>
+                <select name="type" required>
                     <option value="">Select Type</option>
                     <option value="given">Given</option>
                     <option value="taken">Taken</option>
@@ -77,7 +77,7 @@
         </div>
         <h2 class="history-title">Transaction History</h2>
 
-        <% if(user.trans.length===0){ %>
+        <% if(user.tra.length===0){ %>
 
             <div class="empty">
                 No transactions found.
@@ -85,7 +85,7 @@
 
             <% } %>
 
-                <% user.trans.forEach(tr=> { %>
+                <% user.tra.forEach(tr=> { %>
 
                     <div class="transaction-card">
 

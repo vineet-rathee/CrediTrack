@@ -38,11 +38,11 @@
     <% } %>
     <% data.forEach(user => { 
         let net = 0;
-        user.trans.forEach(tr => {
-            if(tr.type === "given")
-                net += Number(tr.amount);
+        user.tra.forEach(tran => {
+            if(tran.type === "given")
+                net += Number(tran.amount);
             else
-                net -= Number(tr.amount);
+                net -= Number(tran.amount);
         });
     %>
     <a href="/user/<%= user.id %>" class="user-card">
@@ -50,7 +50,7 @@
             <h3>👤 <%= user.name %></h3>
             <p>
                 Transactions :
-                <strong><%= user.trans.length %></strong>
+                <strong><%= user.tra.length %></strong>
             </p>
         </div>
         <div class="right">
